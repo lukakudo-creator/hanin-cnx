@@ -13,84 +13,198 @@ body{
   font-family:'Sarabun',sans-serif;
   background:var(--bg);
   color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
 }
 
 header{
-  background:var(--primary);
-  color:#fff;
+  background:#fff;
+  color:var(--text);
   position:sticky;
   top:0;
   z-index:1000;
+  box-shadow:0 2px 12px rgba(15,26,43,.08);
 }
 
 .nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  max-width:1100px;
-  margin:auto;
-  padding:14px 16px;
+  gap:16px;
+  padding:18px 0;
+}
+
+.logo{font-weight:700;}
+
+nav{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:14px;
 }
 
 nav a{
-  color:#fff;
+  color:var(--text);
   text-decoration:none;
-  margin-left:20px;
   font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
 }
 
 nav a:hover{
-  text-decoration:underline;
+  background:rgba(11,61,145,.08);
 }
 
-main{
-  max-width:1100px;
-  margin:auto;
-  padding:24px 16px;
-}
+main{padding:48px 0 32px;}
 
-section{margin-bottom:48px;}
+section{margin-bottom:64px;}
 
 .hero{
+  display:grid;
+  gap:32px;
   background:#fff;
   border-radius:var(--radius);
-  padding:40px;
-  text-align:center;
+  padding:48px clamp(20px,4vw,56px);
   box-shadow:var(--shadow);
+  align-items:center;
 }
 
-.hero h1{color:var(--primary);}
+.hero-text h1{color:var(--primary);margin-bottom:16px;}
+
+.eyebrow{
+  text-transform:uppercase;
+  font-size:.75rem;
+  letter-spacing:.12em;
+  color:rgba(15,26,43,.6);
+  display:inline-block;
+  margin-bottom:12px;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
+}
+
+.btn-primary,
+.btn-secondary{
+  border-radius:10px;
+  padding:12px 22px;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
 
 .btn-primary{
   background:var(--primary);
   color:#fff;
   border:none;
-  border-radius:8px;
-  padding:12px 20px;
-  font-weight:600;
-  cursor:pointer;
+  box-shadow:0 10px 25px rgba(11,61,145,.18);
 }
 
-.btn-primary:hover{opacity:.9;}
+.btn-secondary{
+  background:transparent;
+  color:var(--primary);
+  border:1px solid rgba(11,61,145,.4);
+  text-decoration:none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 22px rgba(11,61,145,.18);
+}
+
+.hero-visual{
+  min-height:240px;
+  background:linear-gradient(135deg,rgba(11,61,145,.08),rgba(11,61,145,.18));
+  border-radius:var(--radius);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.placeholder{
+  border:2px dashed rgba(11,61,145,.35);
+  border-radius:16px;
+  padding:32px;
+  text-align:center;
+  font-weight:600;
+  color:rgba(15,26,43,.7);
+}
 
 .card{
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:var(--radius);
-  padding:20px;
+  padding:28px;
   box-shadow:var(--shadow);
-  margin-top:12px;
 }
 
-.grid{display:grid;gap:20px;}
-@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr);}}
+.grid{display:grid;gap:24px;}
+@media(min-width:720px){
+  .hero{grid-template-columns:1.1fr 0.9fr;}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .services.grid{align-items:stretch;}
+}
+
+.news .section-header{margin-bottom:28px;}
+
+.news-grid{
+  display:grid;
+  gap:24px;
+}
+
+@media(min-width:860px){
+  .news-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+
+.news-card{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+.media-slot{
+  min-height:160px;
+  border-radius:14px;
+  border:2px dashed rgba(11,61,145,.28);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-weight:600;
+  color:rgba(15,26,43,.65);
+  padding:16px;
+}
+
+.contact p{font-size:1.05rem;}
 
 footer{
   background:#0b3d91;
   color:#fff;
   text-align:center;
-  padding:20px;
+  padding:24px 16px;
   margin-top:40px;
+}
+
+@media(max-width:640px){
+  .nav{flex-direction:column;align-items:flex-start;}
+  nav{width:100%;}
+  nav a{padding:8px 0;}
 }
 
 /* Modal */
