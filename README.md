@@ -11,10 +11,19 @@ do that:
 1. Start a simple web server from the project root:
 
    ```bash
+   cd /path/to/hanin-cnx
    python -m http.server 8000
    ```
 
-   Then visit <http://localhost:8000/index.html> in your browser.
+   Then visit <http://localhost:8000/index.html> in your browser. If you prefer
+   to keep your terminal somewhere else (for example, `C:\Windows\System32` on
+   Windows), you can instead run:
+
+   ```bash
+   python -m http.server 8000 --directory /path/to/hanin-cnx
+   ```
+
+   Replace `/path/to/hanin-cnx` with the folder that contains `index.html`.
 
 2. Download `index.html`, `style.css`, and `script.js` to your machine and open
    `index.html` directly.
