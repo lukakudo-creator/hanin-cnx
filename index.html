@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="th">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,104 +10,105 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo"><strong>한인회 | Korean Association Chiang Mai</strong></div>
+      <div class="logo"><strong data-i18n="logo">치앙마이 한인회</strong></div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#news">Highlights</a>
-        <a href="#business">Member Businesses</a>
-        <a href="#contact">Contact</a>
-        <a href="#" id="checkDoc">Check Status</a>
+        <a href="#home" data-i18n="nav-home">홈</a>
+        <a href="#about" data-i18n="nav-about">한인회 소개</a>
+        <a href="#services" data-i18n="nav-services">주요 서비스</a>
+        <a href="#news" data-i18n="nav-news">소식 &amp; 홍보</a>
+        <a href="#business" data-i18n="nav-business">회원 비즈니스</a>
+        <a href="#contact" data-i18n="nav-contact">문의</a>
+        <a href="#" id="checkDoc" data-i18n="nav-check">문서 조회</a>
       </nav>
+      <button id="languageToggle" class="lang-btn" type="button" aria-label="Switch to English">EN</button>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero container">
       <div class="hero-text">
-        <span class="eyebrow">Community &amp; Consular Support</span>
-        <h1>치앙마이 한인회</h1>
-        <p>Welcome to the Korean Association of Chiang Mai — supporting our community with trusted services, cultural activities, and local connections.</p>
+        <span class="eyebrow" data-i18n="hero-eyebrow">커뮤니티 &amp; 영사 지원</span>
+        <h1 data-i18n="hero-heading">치앙마이 한인회</h1>
+        <p data-i18n="hero-description">치앙마이 한인회는 지역 한인과 가족을 위해 신뢰할 수 있는 영사 지원, 문화 행사, 지역 네트워크를 제공합니다.</p>
         <div class="hero-actions">
-          <button class="btn-primary" id="openModal">문서 진행상황 조회 / Check Document Status</button>
-          <a class="btn-secondary" href="#contact">ติดต่อสมาคม</a>
+          <button class="btn-primary" id="openModal" data-i18n="hero-primary">문서 진행상황 조회</button>
+          <a class="btn-secondary" href="#contact" data-i18n="hero-secondary">문의하기</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="placeholder">พื้นที่สำหรับรูปภาพหรือสื่อประชาสัมพันธ์</div>
+        <div class="placeholder" data-i18n="hero-placeholder">행사 사진 또는 홍보 이미지를 위한 자리</div>
       </div>
     </section>
 
     <section id="about" class="container">
-      <h2>About Us</h2>
-      <p>The Korean Association of Chiang Mai (한인회) supports the Korean community through assistance, events, and information services. We also act as the Honorary Consulate Office under the guidance of the Embassy of the Republic of Korea in Thailand.</p>
+      <h2 data-i18n="about-title">한인회 소개</h2>
+      <p data-i18n="about-body">치앙마이 한인회는 영사 업무 지원, 지역 정보 제공, 커뮤니티 행사를 통해 한인 사회를 돕고 있습니다. 또한 주태국 대한민국 대사관의 지침 아래 명예영사관 역할을 수행하고 있습니다.</p>
     </section>
 
     <section id="services" class="container grid services">
       <article class="card">
-        <h3>Community Support</h3>
-        <p>Helping members with document processing, local guidance, and embassy coordination.</p>
+        <h3 data-i18n="service1-title">커뮤니티 지원</h3>
+        <p data-i18n="service1-desc">영사 서류 처리, 지역 생활 안내, 대사관 연계를 통해 회원들의 필요를 신속하게 돕습니다.</p>
       </article>
       <article class="card">
-        <h3>Events &amp; Culture</h3>
-        <p>Workshops, cultural festivals, and volunteer activities that connect members and friends.</p>
+        <h3 data-i18n="service2-title">행사 &amp; 문화교류</h3>
+        <p data-i18n="service2-desc">워크숍, 문화 축제, 봉사 활동을 통해 회원과 가족이 함께 어울릴 수 있는 기회를 만듭니다.</p>
       </article>
       <article class="card">
-        <h3>Business Network</h3>
-        <p>Connecting entrepreneurs and promoting services from Korean-owned shops, restaurants, and professionals in Chiang Mai.</p>
+        <h3 data-i18n="service3-title">비즈니스 네트워크</h3>
+        <p data-i18n="service3-desc">치앙마이의 한인 상점, 음식점, 전문 서비스 정보를 공유하여 지역 경제를 활성화합니다.</p>
       </article>
     </section>
 
     <section id="news" class="container news">
       <div class="section-header">
-        <h2>ข่าวและพื้นที่ประชาสัมพันธ์</h2>
-        <p>เตรียมพื้นที่ไว้สำหรับอัปเดตข่าวกิจกรรม การแจ้งเตือนสำคัญ และสนับสนุนธุรกิจสมาชิก</p>
+        <h2 data-i18n="news-title">소식 &amp; 홍보 공간</h2>
+        <p data-i18n="news-description">한인회 소식, 주요 안내, 회원 비즈니스 홍보를 위한 콘텐츠를 이곳에 채워갈 예정입니다.</p>
       </div>
       <div class="news-grid">
         <article class="news-card">
-          <div class="media-slot">รูปภาพกิจกรรมล่าสุด</div>
-          <h3>หัวข้อข่าว / กิจกรรม</h3>
-          <p>สรุปสั้น ๆ เกี่ยวกับกิจกรรมหรือประกาศ เพื่อให้สมาชิกคลิกอ่านรายละเอียดเพิ่มเติมในอนาคต</p>
+          <div class="media-slot" data-i18n="news-card1-media">최근 행사 사진 자리</div>
+          <h3 data-i18n="news-card1-title">행사 소식 미리보기</h3>
+          <p data-i18n="news-card1-body">곧 업데이트될 행사 및 공지 요약을 담아 회원들이 세부 내용을 쉽게 확인할 수 있도록 준비합니다.</p>
         </article>
         <article class="news-card">
-          <div class="media-slot">สปอตไลท์ธุรกิจสมาชิก</div>
-          <h3>สนับสนุนร้านอาหารหรือบริการ</h3>
-          <p>พื้นที่โฆษณาให้ธุรกิจชาวเกาหลีในเชียงใหม่ พร้อมลิงก์หรือโปรโมชั่นพิเศษ</p>
+          <div class="media-slot" data-i18n="news-card2-media">회원 비즈니스 홍보 자리</div>
+          <h3 data-i18n="news-card2-title">추천 매장 &amp; 서비스</h3>
+          <p data-i18n="news-card2-body">치앙마이에 위치한 한인 업체를 소개하고 특별 프로모션이나 연락처를 연결할 수 있도록 마련한 공간입니다.</p>
         </article>
         <article class="news-card">
-          <div class="media-slot">ภาพโปสเตอร์งานถัดไป</div>
-          <h3>กิจกรรมกำลังจะมาถึง</h3>
-          <p>รายละเอียดเบื้องต้นของงานรวมพล ช่วยให้สมาชิกเตรียมตัวและติดตามข่าวสารได้ง่าย</p>
+          <div class="media-slot" data-i18n="news-card3-media">다음 행사 포스터 자리</div>
+          <h3 data-i18n="news-card3-title">다가오는 일정</h3>
+          <p data-i18n="news-card3-body">예정된 모임과 프로그램을 사전에 안내하여 회원들이 준비하고 참여할 수 있도록 돕습니다.</p>
         </article>
       </div>
     </section>
 
     <section id="business" class="container">
-      <h2>Member Businesses</h2>
+      <h2 data-i18n="business-title">회원 비즈니스 안내</h2>
       <div class="card">
-        <p>Business listings are provided for member convenience and supported by sponsorship contributions to the association’s operations.</p>
+        <p data-i18n="business-body">회원 편의를 위해 업종별 리스트를 제공하고 있으며, 후원사를 통해 한인회의 운영과 커뮤니티 활동을 함께 만들어갑니다.</p>
       </div>
     </section>
 
     <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>📍 Huay Kaew Rd, Chiang Mai, Thailand<br>📞 05x-xxx-xxxx<br>✉️ info@hanincnx.org</p>
+      <h2 data-i18n="contact-title">문의 및 방문</h2>
+      <p data-i18n="contact-body" data-i18n-target="html">📍 Huay Kaew Rd, Chiang Mai, Thailand<br>📞 05x-xxx-xxxx<br>✉️ info@hanincnx.org</p>
     </section>
   </main>
 
   <footer>
-    © 2025 Korean Association Chiang Mai. All rights reserved.
+    <span data-i18n="footer-text">© 2025 치앙마이 한인회. All rights reserved.</span>
   </footer>
 
   <!-- Modal -->
   <div class="modal-bg" id="modalBg">
     <div class="modal">
       <button class="close-btn" id="closeModal">×</button>
-      <h3>문서 진행상황 조회</h3>
-      <label for="mid">회원번호 (Member ID)</label>
-      <input id="mid" type="text" placeholder="예: 00123" />
-      <button class="btn-primary" id="searchBtn">조회하기</button>
+      <h3 data-i18n="modal-title">문서 진행상황 조회</h3>
+      <label for="mid" data-i18n="modal-label">회원번호 (Member ID)</label>
+      <input id="mid" type="text" placeholder="예: 00123" data-i18n="modal-placeholder" data-i18n-target="attr:placeholder" />
+      <button class="btn-primary" id="searchBtn" data-i18n="modal-button">조회하기</button>
       <div id="result" class="result" style="display:none;"></div>
     </div>
   </div>
