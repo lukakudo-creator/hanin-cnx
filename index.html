@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สมาคมชาวเกาหลีเชียงใหม่ | Korean Association Chiang Mai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo"><strong>한인회 | Korean Association Chiang Mai</strong></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#business">Member Businesses</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="checkDoc">Check Status</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>치앙마이 한인회</h1>
+      <p>Welcome to the Korean Association of Chiang Mai — Supporting our Korean community with helpful services and local connections.</p>
+      <button class="btn-primary" id="openModal">문서 진행상황 조회 / Check Document Status</button>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>The Korean Association of Chiang Mai (한인회) supports the Korean community through assistance, events, and information services. We also act as the Honorary Consulate Office under the guidance of the Embassy of the Republic of Korea in Thailand.</p>
+    </section>
+
+    <section id="services" class="grid">
+      <div class="card">
+        <h3>Community Support</h3>
+        <p>Helping members with document processing, local guidance, and embassy coordination.</p>
+      </div>
+      <div class="card">
+        <h3>Events & News</h3>
+        <p>Regular updates on community activities and announcements.</p>
+      </div>
+    </section>
+
+    <section id="business">
+      <h2>Member Businesses</h2>
+      <div class="card">
+        <p>Business listings are provided for member convenience and supported by sponsorship contributions to the association’s operations.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📍 Huay Kaew Rd, Chiang Mai, Thailand<br>📞 05x-xxx-xxxx<br>✉️ info@hanincnx.org</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Korean Association Chiang Mai. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-bg" id="modalBg">
+    <div class="modal">
+      <button class="close-btn" id="closeModal">×</button>
+      <h3>문서 진행상황 조회</h3>
+      <label for="mid">회원번호 (Member ID)</label>
+      <input id="mid" type="text" placeholder="예: 00123" />
+      <button class="btn-primary" id="searchBtn">조회하기</button>
+      <div id="result" class="result" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
